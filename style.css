@@ -40,7 +40,6 @@ ul{
 }
 
 
- 
 div.container{
         min-height: 100vh;
     height: auto;
@@ -55,6 +54,9 @@ div.container{
     border-left: 1px solid #7F1B10;
     border-right: 1px solid #7F1B10;
     padding-bottom: 1px;
+}
+main > .container{
+    max-width: 96%;
 }
 
 /* Header Top */
@@ -71,8 +73,8 @@ header {
 .header-top .container {
   background-color: #323232;
   min-height: 49px;
-  max-width: 100%;
-  width: 918px;
+  width: 100%;
+  /* width: 918px; */
   display: flex;
   /* flex-wrap: wrap; */
   align-items: start;
@@ -115,7 +117,7 @@ header {
 .header-bottom {
   background-color: #ebebeb;
   padding-left: 0;
-  width: 918px;
+  width: 100%;
   
   border-top: 1px solid #C1C1AF;
 }
