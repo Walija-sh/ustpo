@@ -73,8 +73,8 @@ header {
 .header-top .container {
   background-color: #323232;
   min-height: 49px;
-  width: 100%;
-  /* width: 918px; */
+   max-width: 100%;
+  width: 918px;
   display: flex;
   /* flex-wrap: wrap; */
   align-items: start;
@@ -117,7 +117,8 @@ header {
 .header-bottom {
   background-color: #ebebeb;
   padding-left: 0;
-  width: 100%;
+  max-width: 100%;
+  width: 918px;
   
   border-top: 1px solid #C1C1AF;
 }
@@ -261,4 +262,24 @@ color: #256725;
     display: inline-block;
     max-width: 101px;
     width: 100%;
+}
+
+/* Content box */
+.content-box{
+    width: 606px;
+    margin-inline: auto;
+    padding-left: 8px;
+}
+.redBox{
+    margin: 12px 0px 12px 0px;
+    padding: 7px 20px;
+    border: 1px solid #df1115;
+    background: linear-gradient(to bottom,#FEE9E8,#FFDEDD,#ffcece);
+    color: #005091;
+    font: 13px arial;
+     line-height: 1.5;
+}
+.redBox a{
+    color: #0033cc;
+   
 }
