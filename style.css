@@ -267,8 +267,9 @@ color: #256725;
 /* Content box */
 .content-box{
     width: 606px;
+    max-width: 100%;
     margin-inline: auto;
-    padding-left: 8px;
+    padding-inline: 8px;
 }
 .redBox{
     margin: 12px 0px 12px 0px;
@@ -278,6 +279,7 @@ color: #256725;
     color: #005091;
     font: 13px arial;
      line-height: 1.5;
+    
 }
 .redBox a{
     color: #0033cc;
