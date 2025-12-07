@@ -52,7 +52,11 @@ div.container{
 
     padding-bottom: 1px;
 }
-
+.scale-wrapper > .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 /* Header Top */
 header {
@@ -243,8 +247,8 @@ color: #256725;
 /* Search */
 .content{
     background: white;
-    min-height: 100vh;
-    
+    min-height: 100%;
+    flex-grow: 1;
     border-left: 1px solid #7F1B10;
     border-right: 1px solid #7F1B10;
 }
