@@ -47,7 +47,7 @@ div.container{
 }
 
 .container{
-    padding-inline: 2%;
+    padding-inline: 5%;
     width: 960px;
 
     padding-bottom: 1px;
@@ -76,7 +76,7 @@ header {
   background-color: #323232;
   min-height: 49px;
    max-width: 100%;
-  width: 918px;
+  width: 960px;
   display: flex;
   /* flex-wrap: wrap; */
   align-items: start;
@@ -120,7 +120,7 @@ header {
   background-color: #ebebeb;
   padding-left: 0;
   max-width: 100%;
-  width: 918px;
+  width: 960px;
   
   border-top: 1px solid #C1C1AF;
 }
@@ -840,3 +840,8 @@ align-items: center;
             clip: rect(0, 0, 0, 0);
             border: 0;
         }
+@media screen and (min-width:920px){
+    .container{
+    padding-inline: 0%;
+}
+}
