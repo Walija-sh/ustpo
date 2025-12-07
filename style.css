@@ -47,17 +47,16 @@ div.container{
 }
 
 .container{
-   
+    padding-inline: 2%;
     width: 920px;
-    
-    background: none repeat scroll 0 0 #FFFFFF;
+
     border-left: 1px solid #7F1B10;
     border-right: 1px solid #7F1B10;
     padding-bottom: 1px;
 }
-main > .container{
+/* main > .container{
     max-width: 96%;
-}
+} */
 
 /* Header Top */
 header {
@@ -243,7 +242,10 @@ color: #256725;
 
 
 /* Hero */
-
+.content{
+    background: white;
+    min-height: 100vh;
+}
 .hero-header{
     padding: 0 8px;
     font-size: 12px;
