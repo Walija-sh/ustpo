@@ -50,8 +50,6 @@ div.container{
     padding-inline: 2%;
     width: 920px;
 
-    border-left: 1px solid #7F1B10;
-    border-right: 1px solid #7F1B10;
     padding-bottom: 1px;
 }
 /* main > .container{
@@ -66,6 +64,9 @@ header {
   color: #444;
   background-color: #fff;
   border-top: 4px solid #7F1B10;
+  
+    border-left: 1px solid #7F1B10;
+    border-right: 1px solid #7F1B10;
   
 }
 
@@ -241,10 +242,13 @@ color: #256725;
 
 
 
-/* Hero */
+/* Search */
 .content{
     background: white;
     min-height: 100vh;
+    
+    border-left: 1px solid #7F1B10;
+    border-right: 1px solid #7F1B10;
 }
 .hero-header{
     padding: 0 8px;
@@ -286,4 +290,158 @@ color: #256725;
 .redBox a{
     color: #0033cc;
    
+}
+.search-title{
+        color: #006699;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 7px 0 0 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 606px;
+}
+.search-title img{
+    width: 16px;
+    height: 16px;
+}
+.search-title h2{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.search-title > img{
+    cursor: pointer;
+}
+/* Basic tab widget styles */
+.tab-widget {
+  font-size: 12px;
+  margin: 0 0px 12px 0px;
+    border-bottom: dotted 2px #b2b2b2;
+    padding-bottom: 10px;
+}
+
+.tab-header {
+position: relative;
+
+}
+.tab-header > img{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.tab-head{
+    position: relative;
+    z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0 0 8px;
+  width: fit-content;
+}
+.tabs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  margin-right: 2px;
+  position: relative;
+}
+
+
+.tabs li a {
+background: white;
+border:1px solid #c1c1af ;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+border-bottom: transparent;
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 34px;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #1d617e;
+ 
+}
+
+
+
+.help-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/* Tab body and content */
+.tab-body {
+  background-color: #E1E8F0;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.tab-content {
+  display: none;
+  background: #E1E8F0;
+  padding: 8px 3px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Form layout using grid */
+.search-form .form-grid {
+ display: flex;
+  gap: 8px;
+  align-items: center;
+}
+input:focus,select:focus{
+    outline: none;
+}
+.input-select {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px;
+  font-size: 12px;
+  background: white;
+  border: 1px solid #c1c1af;
+  width: 100%;
+}
+
+.input-text {
+  padding: 5px;
+  font-size: 12px;
+  
+    background: white;
+  border: 1px solid #c1c1af;
+  min-width: 130px;
+  max-width: 131px;
+  width: 100%;
+}
+
+.status-btn{
+    width: 73px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.doc-btn{
+    width: 95px;
+      flex-shrink: 0;
+      cursor: pointer;
+}
+
+.hide {
+  display: none;
 }
