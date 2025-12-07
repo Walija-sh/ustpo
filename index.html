@@ -187,41 +187,53 @@ Trademarks
     </div>
     </main>
 
-    <!-- <script>
-      function scaleBody() {
+
+<script>
+  function autoZoom() {
   const body = document.body;
-  const bodyWidth = body.scrollWidth; // Natural full width of page
+  const html = document.documentElement;
+
+  // natural full content width
+  const contentWidth = Math.max(
+    body.scrollWidth,
+    body.offsetWidth,
+    html.clientWidth,
+    html.scrollWidth,
+    html.offsetWidth
+  );
+
   const viewportWidth = window.innerWidth;
 
-  // If viewport is smaller, scale down
-  if (viewportWidth < bodyWidth) {
-    let scale = viewportWidth / bodyWidth;
+  // If content is wider, scale down (like automatic zoom-out)
+  if (contentWidth > viewportWidth) {
+    let scale = viewportWidth / contentWidth;
 
-    // OPTIONAL → Keep 96% width (side spaces)
-    scale *= 0.96;
+    // Optional: Keep 96% ratio for side spacing (remove if not needed)
+    scale *= 1;
 
-    body.style.transformOrigin = "top center";
+    body.style.transformOrigin = "top left";
     body.style.transform = `scale(${scale})`;
-    body.style.width = bodyWidth + "px";
-    body.style.overflowX = "hidden"; // Prevent horizontal scroll
-  } else {
-    // Reset if screen is larger
+
+    // Keep width fixed so scaling works
+    body.style.width = contentWidth + "px";
+
+    // Hide horizontal scroll entirely
+    document.documentElement.style.overflowX = "hidden";
+  } 
+  else {
+    // Reset if no overflow
     body.style.transform = "scale(1)";
     body.style.width = "auto";
+    document.documentElement.style.overflowX = "hidden";
   }
 }
 
-// Run once at start
-scaleBody();
+// Run initially
+autoZoom();
 
-// Run on window resize
-window.addEventListener("resize", scaleBody);
+// Run when window resizes
+window.addEventListener("resize", autoZoom);
 
-    </script> -->
-
-        
-
-
-
+</script>
 </body>
 </html>
