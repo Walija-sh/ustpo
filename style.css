@@ -48,13 +48,11 @@ div.container{
 
 .container{
     padding-inline: 2%;
-    width: 920px;
+    width: 960px;
 
     padding-bottom: 1px;
 }
-/* main > .container{
-    max-width: 96%;
-} */
+
 
 /* Header Top */
 header {
@@ -444,4 +442,272 @@ input:focus,select:focus{
 
 .hide {
   display: none;
+}
+
+/* Status results */
+.status-container{
+        padding: 16px 8px 10px 8px;
+    width: 100%;
+    max-width: 904px;
+    position: relative;
+
+}
+.search-res{
+    color: #6d6d6d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+.status-header {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.status-header > img{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.status-head{
+    position: relative;
+    z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0 0 8px;
+  width: fit-content;
+}
+.status-header-btns{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 17px;
+    padding-top: 9px;
+}
+.status-header-btns button{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-left: 1px solid #c1c1af;
+    width: 130px;
+    justify-content: center;
+    gap: 5px;
+    font-size: 11px;
+    color: #1d617e;
+}
+.status-header-btns button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.status-header-btns img{
+    width: 30px;
+    object-fit: contain;
+}
+.print-btn img{
+    width: 24px;
+}
+.download-btn .arrow{
+    width: 10px;
+}
+
+/* Table */
+
+        .trademark-container {
+            max-width: 920px;
+            margin: 0 auto;
+            background-color: white;
+            border-inline: 1px solid #c1c1af;
+            
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .trademark-header {
+            padding: 12px 16px;
+            background-color: #ECEFF9;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .trademark-row {
+            display: flex;
+            border-bottom: 1px solid #eee;
+            
+        }
+
+        .trademark-row:last-child {
+            border-bottom: none;
+        }
+
+        .row-key {
+            flex: 0 0 160px;
+            min-width: 160px;
+            background-color: #ECEFF9;
+            font-weight: bold;
+            padding: 4px;
+            color: #333;
+            line-height: 16px;
+            font-size: 12px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+           
+            text-align: right;
+        }
+
+        .row-value {
+            flex: 1;
+           
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 4px;
+            color: #333;
+            line-height: 16px;
+            font-size: 12px;
+        }
+
+        .row-value-single {
+            width: 100%;
+           
+        }
+
+        .mark-display {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 4px 0;
+        }
+
+        .mark-text {
+            font-size: 12px;
+           
+            color: #333;
+        }
+
+        .mark-image {
+            width: 211px;
+            height: auto;
+            transition: all .5s ease;
+            padding: 4px;
+            background-color: white;
+        }
+        .mark-image:hover{
+            transform: scale(1.5);
+            transform-origin: top right;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 12px 0;
+        }
+
+        .status-icon {
+            flex: 0 0 70px;
+            height: 70px;
+        }
+
+        .status-content {
+            flex: 1;
+            font-size: 12px;
+              color: #333;
+        }
+
+        .status-title {
+           
+          
+            
+            display: flex;
+            align-items: center;
+        }
+
+       
+
+        .double-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+
+        
+
+        .double-column .row-key {
+            flex: 0 0 140px;
+        }
+
+        .double-column .row-value {
+            flex: 1;
+        }
+
+ 
+
+        .link-info{
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .link-info:hover {
+            text-decoration: underline;
+        }
+
+       
+
+
+
+        /* ACCORDIAN */
+        .trademark-details {
+    max-width: 920px;
+    margin: auto;
+    background: #F1F1F1;
+    border-inline: 1px solid #c1c1af;
+    position: relative;
+}
+.expand-all-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102px;
+}
+
+
+
+
+
+.accordion-header {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  line-height: 27px;
+  background: linear-gradient(to bottom,#ededed 50%,#f1f1f1 50%);
+   font-size: 16px;
+    cursor: pointer;
+    gap: 5px;
+     font-weight: bold;
+     color: #336699;
+    
+}
+.accordion-header.active {
+    background: #E6E6E6 !important;
+}
+
+
+
+.chev {
+    width: 10px;
+    font-size: 11px;
+    transition: transform 0.2s ease;
+}
+
+.chev.open {
+    transform: rotate(180deg);
 }
